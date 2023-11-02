@@ -1,0 +1,23 @@
+<html>
+<head>
+<title> text box </title>
+</head>
+<body>
+<label>Name:</label>
+<input type="text" id="tt" size="100" placeholder="enter your thoughts"><br>
+<input type="button" id="btn" value="submit">
+<input type="button" value="reset">
+<p class="output" id="output1"></p>
+<script>
+        const text = document.getElementById('tt');
+        const btn  = document.getElementById('btn');
+        const out1 = document.getElementById('output1');
+        function fun1(){
+             out1.innerHTML = text.value;
+}
+
+btn.addEventListener('click',fun1);
+
+</script>
+</body>
+</html>
